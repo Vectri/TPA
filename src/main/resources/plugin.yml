@@ -5,3 +5,10 @@ prefix: TPA
 authors: [vectri]
 description: A plugin to handle teleport requests.
 website: vectri.github.io
+commands:
+  tpa:
+    description: Accept a teleport request from another player.
+    usage: /tpa <player>
+  tpr:
+    description: Send a player a teleport request.
+    usage: /tpr <player>
