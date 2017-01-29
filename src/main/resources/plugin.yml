@@ -1,0 +1,7 @@
+name: TPA
+version: ${project.version}
+main: io.github.vectri.tpa.Main
+prefix: TPA
+authors: [vectri]
+description: A plugin to handle teleport requests.
+website: vectri.github.io
