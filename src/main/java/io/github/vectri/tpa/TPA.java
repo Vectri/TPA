@@ -11,13 +11,11 @@ import org.bukkit.plugin.java.JavaPlugin;
 public final class TPA extends JavaPlugin {
     @Override
     public void onEnable() {
-        this.getCommand("tpa").setExecutor(new TPACommand());
-        this.getCommand("tpr").setExecutor(new TPRCommand());
-        new RequestHandler(this);
+        this.getCommand("tpa").setExecutor(new TPACommand(this));
+        this.getCommand("tpr").setExecutor(new TPRCommand(this));
     }
 
     @Override
     public void onDisable() {
-        // Plugin shutdown logic
     }
 }
