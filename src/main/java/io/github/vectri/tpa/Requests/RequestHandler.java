@@ -38,7 +38,11 @@ public class RequestHandler {
     boolean remove(UUID target, UUID requester) {
         Request request = get(target);
         if (request != null) {
-            requestArrayList.remove(request);
+            ArrayList<UUID> requesterList = request.getRequesterList();
+            requesterList.remove(requester);
+            if (requesterList.isEmpty()) {
+                requestArrayList.remove(request);
+            }
             return true;
         }
         return false;
