@@ -3,7 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="43cdcd61-8c52-4026-8fdd-b62857ed902a" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/io/github/vectri/tpa/Requests/RequestTimer.java" afterPath="$PROJECT_DIR$/src/main/java/io/github/vectri/tpa/Requests/RequestTimer.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pom.xml" afterPath="$PROJECT_DIR$/pom.xml" />
     </list>
     <list id="6c0cab06-13df-4507-8a0d-ecaa2ac386ac" name="Rejected commit: Default" comment="Add RequestHandler&#10;" />
     <ignored path="$PROJECT_DIR$/out/" />
@@ -30,6 +30,16 @@
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="306">
               <caret line="21" column="0" lean-forward="true" selection-start-line="21" selection-start-column="0" selection-end-line="21" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="pom.xml" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/pom.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="34">
+              <caret line="8" column="16" lean-forward="false" selection-start-line="8" selection-start-column="16" selection-end-line="8" selection-end-column="16" />
               <folding />
             </state>
           </provider>
@@ -85,7 +95,7 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="RequestTimer.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="RequestTimer.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/io/github/vectri/tpa/Requests/RequestTimer.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="374">
@@ -127,13 +137,13 @@
         <option value="$PROJECT_DIR$/src/main/java/io/github/vectri/tpa/RequestHandler.java" />
         <option value="$PROJECT_DIR$/src/main/java/io/github/vectri/tpa/Commands/Requests/RequestTimer.java" />
         <option value="$PROJECT_DIR$/src/main/java/io/github/vectri/tpa/Commands/Requests/RequestHandler.java" />
-        <option value="$PROJECT_DIR$/pom.xml" />
         <option value="$PROJECT_DIR$/src/main/java/io/github/vectri/tpa/TPA.java" />
         <option value="$PROJECT_DIR$/src/main/java/io/github/vectri/tpa/Requests/Request.java" />
         <option value="$PROJECT_DIR$/src/main/java/io/github/vectri/tpa/Commands/TPACommand.java" />
         <option value="$PROJECT_DIR$/src/main/java/io/github/vectri/tpa/Requests/RequestHandler.java" />
         <option value="$PROJECT_DIR$/src/main/java/io/github/vectri/tpa/Commands/TPRCommand.java" />
         <option value="$PROJECT_DIR$/src/main/java/io/github/vectri/tpa/Requests/RequestTimer.java" />
+        <option value="$PROJECT_DIR$/pom.xml" />
       </list>
     </option>
   </component>
@@ -755,7 +765,14 @@
       <option name="project" value="LOCAL" />
       <updated>1486192706339</updated>
     </task>
-    <option name="localTasksCounter" value="20" />
+    <task id="LOCAL-00020" summary="Remove debug message in RequestTimer">
+      <created>1486192793067</created>
+      <option name="number" value="00020" />
+      <option name="presentableId" value="LOCAL-00020" />
+      <option name="project" value="LOCAL" />
+      <updated>1486192793067</updated>
+    </task>
+    <option name="localTasksCounter" value="21" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -816,7 +833,8 @@
     <MESSAGE value="Add missing color to chat message in TPRCommand" />
     <MESSAGE value="Fix color not being reset in chat message in TPRCommand" />
     <MESSAGE value="Add color in chat message in TPRCommand" />
-    <option name="LAST_COMMIT_MESSAGE" value="Add color in chat message in TPRCommand" />
+    <MESSAGE value="Remove debug message in RequestTimer" />
+    <option name="LAST_COMMIT_MESSAGE" value="Remove debug message in RequestTimer" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1156,14 +1174,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-382">
-          <caret line="7" column="19" lean-forward="false" selection-start-line="7" selection-start-column="19" selection-end-line="7" selection-end-column="19" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/io/github/vectri/tpa/Requests/Request.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="136">
@@ -1223,6 +1233,14 @@
             <element signature="e#478#636#0" expanded="true" />
             <element signature="e#635#636#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="34">
+          <caret line="8" column="16" lean-forward="false" selection-start-line="8" selection-start-column="16" selection-end-line="8" selection-end-column="16" />
+          <folding />
         </state>
       </provider>
     </entry>
