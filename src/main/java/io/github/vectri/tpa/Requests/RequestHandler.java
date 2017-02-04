@@ -35,7 +35,7 @@ public class RequestHandler {
         requesterList.add(requester);
     }
 
-    boolean remove(UUID target, UUID requester) {
+    public boolean remove(UUID target, UUID requester) {
         Request request = get(target);
         if (request != null) {
             ArrayList<UUID> requesterList = request.getRequesterList();
