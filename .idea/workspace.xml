@@ -50,8 +50,8 @@
       <file leaf-file-name="TPRCommand.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/io/github/vectri/tpa/Commands/TPRCommand.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="315">
-              <caret line="40" column="67" lean-forward="true" selection-start-line="40" selection-start-column="67" selection-end-line="40" selection-end-column="67" />
+            <state relative-caret-position="298">
+              <caret line="39" column="134" lean-forward="false" selection-start-line="39" selection-start-column="134" selection-end-line="39" selection-end-column="134" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -741,7 +741,14 @@
       <option name="project" value="LOCAL" />
       <updated>1486192434927</updated>
     </task>
-    <option name="localTasksCounter" value="18" />
+    <task id="LOCAL-00018" summary="Fix color not being reset in chat message in TPRCommand">
+      <created>1486192615893</created>
+      <option name="number" value="00018" />
+      <option name="presentableId" value="LOCAL-00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1486192615893</updated>
+    </task>
+    <option name="localTasksCounter" value="19" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -800,7 +807,8 @@
     <MESSAGE value="Update TPRCommand to correspond with Request updates&#10;" />
     <MESSAGE value="Update remove in RequestHandler to public to be used in TPACommand" />
     <MESSAGE value="Add missing color to chat message in TPRCommand" />
-    <option name="LAST_COMMIT_MESSAGE" value="Add missing color to chat message in TPRCommand" />
+    <MESSAGE value="Fix color not being reset in chat message in TPRCommand" />
+    <option name="LAST_COMMIT_MESSAGE" value="Fix color not being reset in chat message in TPRCommand" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1202,8 +1210,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/io/github/vectri/tpa/Commands/TPRCommand.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="315">
-          <caret line="40" column="67" lean-forward="true" selection-start-line="40" selection-start-column="67" selection-end-line="40" selection-end-column="67" />
+        <state relative-caret-position="298">
+          <caret line="39" column="134" lean-forward="false" selection-start-line="39" selection-start-column="134" selection-end-line="39" selection-end-column="134" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
