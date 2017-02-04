@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="43cdcd61-8c52-4026-8fdd-b62857ed902a" name="Default" comment="Update TPRCommand to correspond with Request updates&#10;">
+    <list default="true" id="43cdcd61-8c52-4026-8fdd-b62857ed902a" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/io/github/vectri/tpa/Commands/TPRCommand.java" afterPath="$PROJECT_DIR$/src/main/java/io/github/vectri/tpa/Commands/TPRCommand.java" />
     </list>
@@ -50,8 +50,8 @@
       <file leaf-file-name="TPRCommand.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/io/github/vectri/tpa/Commands/TPRCommand.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="383">
-              <caret line="41" column="36" lean-forward="false" selection-start-line="41" selection-start-column="36" selection-end-line="41" selection-end-column="36" />
+            <state relative-caret-position="315">
+              <caret line="40" column="67" lean-forward="true" selection-start-line="40" selection-start-column="67" selection-end-line="40" selection-end-column="67" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -734,7 +734,14 @@
       <option name="project" value="LOCAL" />
       <updated>1486191928211</updated>
     </task>
-    <option name="localTasksCounter" value="17" />
+    <task id="LOCAL-00017" summary="Add missing color to chat message in TPRCommand">
+      <created>1486192434927</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1486192434927</updated>
+    </task>
+    <option name="localTasksCounter" value="18" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -792,7 +799,8 @@
     <MESSAGE value="Update TPRCommand with colored player names + error message upon invalid player" />
     <MESSAGE value="Update TPRCommand to correspond with Request updates&#10;" />
     <MESSAGE value="Update remove in RequestHandler to public to be used in TPACommand" />
-    <option name="LAST_COMMIT_MESSAGE" value="Update remove in RequestHandler to public to be used in TPACommand" />
+    <MESSAGE value="Add missing color to chat message in TPRCommand" />
+    <option name="LAST_COMMIT_MESSAGE" value="Add missing color to chat message in TPRCommand" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1194,8 +1202,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/io/github/vectri/tpa/Commands/TPRCommand.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="383">
-          <caret line="41" column="36" lean-forward="false" selection-start-line="41" selection-start-column="36" selection-end-line="41" selection-end-column="36" />
+        <state relative-caret-position="315">
+          <caret line="40" column="67" lean-forward="true" selection-start-line="40" selection-start-column="67" selection-end-line="40" selection-end-column="67" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
