@@ -38,7 +38,8 @@ public class TPRCommand implements CommandExecutor {
                         } else {
                             requestHandler.add(playerUniqueId, senderUniqueId);
                             sender.sendMessage("Sent a teleport request to " + player.getName() + ".");
-                            player.sendMessage(sender.getName() + " has requested to teleport to you. /tpa " + ChatColor.GREEN + sender.getName() + ChatColor.RESET + " to accept.");
+                            player.sendMessage(ChatColor.GREEN + sender.getName() + " has requested to teleport to you. /tpa "
+                                    + ChatColor.GREEN + sender.getName() + ChatColor.RESET + " to accept.");
                         }
                         return true;
                     }
