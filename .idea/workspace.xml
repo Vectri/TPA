@@ -3,7 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="43cdcd61-8c52-4026-8fdd-b62857ed902a" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/io/github/vectri/tpa/Commands/TPRCommand.java" afterPath="$PROJECT_DIR$/src/main/java/io/github/vectri/tpa/Commands/TPRCommand.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/io/github/vectri/tpa/Requests/RequestTimer.java" afterPath="$PROJECT_DIR$/src/main/java/io/github/vectri/tpa/Requests/RequestTimer.java" />
     </list>
     <list id="6c0cab06-13df-4507-8a0d-ecaa2ac386ac" name="Rejected commit: Default" comment="Add RequestHandler&#10;" />
     <ignored path="$PROJECT_DIR$/out/" />
@@ -47,11 +47,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="TPRCommand.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="TPRCommand.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/io/github/vectri/tpa/Commands/TPRCommand.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="298">
-              <caret line="39" column="134" lean-forward="false" selection-start-line="39" selection-start-column="134" selection-end-line="39" selection-end-column="134" />
+            <state relative-caret-position="26">
+              <caret line="23" column="52" lean-forward="true" selection-start-line="23" selection-start-column="52" selection-end-line="23" selection-end-column="52" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -85,15 +85,15 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="RequestTimer.java" pinned="false" current-in-tab="false">
+      <file leaf-file-name="RequestTimer.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/io/github/vectri/tpa/Requests/RequestTimer.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="221">
-              <caret line="13" column="11" lean-forward="false" selection-start-line="13" selection-start-column="11" selection-end-line="13" selection-end-column="11" />
+            <state relative-caret-position="374">
+              <caret line="22" column="57" lean-forward="false" selection-start-line="22" selection-start-column="57" selection-end-line="22" selection-end-column="57" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#478#749#0" expanded="true" />
-                <element signature="e#748#749#0" expanded="true" />
+                <element signature="e#478#636#0" expanded="true" />
+                <element signature="e#635#636#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -130,10 +130,10 @@
         <option value="$PROJECT_DIR$/pom.xml" />
         <option value="$PROJECT_DIR$/src/main/java/io/github/vectri/tpa/TPA.java" />
         <option value="$PROJECT_DIR$/src/main/java/io/github/vectri/tpa/Requests/Request.java" />
-        <option value="$PROJECT_DIR$/src/main/java/io/github/vectri/tpa/Requests/RequestTimer.java" />
         <option value="$PROJECT_DIR$/src/main/java/io/github/vectri/tpa/Commands/TPACommand.java" />
         <option value="$PROJECT_DIR$/src/main/java/io/github/vectri/tpa/Requests/RequestHandler.java" />
         <option value="$PROJECT_DIR$/src/main/java/io/github/vectri/tpa/Commands/TPRCommand.java" />
+        <option value="$PROJECT_DIR$/src/main/java/io/github/vectri/tpa/Requests/RequestTimer.java" />
       </list>
     </option>
   </component>
@@ -748,7 +748,14 @@
       <option name="project" value="LOCAL" />
       <updated>1486192615893</updated>
     </task>
-    <option name="localTasksCounter" value="19" />
+    <task id="LOCAL-00019" summary="Add color in chat message in TPRCommand">
+      <created>1486192706339</created>
+      <option name="number" value="00019" />
+      <option name="presentableId" value="LOCAL-00019" />
+      <option name="project" value="LOCAL" />
+      <updated>1486192706339</updated>
+    </task>
+    <option name="localTasksCounter" value="20" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -808,7 +815,8 @@
     <MESSAGE value="Update remove in RequestHandler to public to be used in TPACommand" />
     <MESSAGE value="Add missing color to chat message in TPRCommand" />
     <MESSAGE value="Fix color not being reset in chat message in TPRCommand" />
-    <option name="LAST_COMMIT_MESSAGE" value="Fix color not being reset in chat message in TPRCommand" />
+    <MESSAGE value="Add color in chat message in TPRCommand" />
+    <option name="LAST_COMMIT_MESSAGE" value="Add color in chat message in TPRCommand" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -885,8 +893,8 @@
           <caret line="25" column="48" lean-forward="false" selection-start-line="25" selection-start-column="48" selection-end-line="25" selection-end-column="48" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#478#749#0" expanded="true" />
-            <element signature="e#748#749#0" expanded="true" />
+            <element signature="e#478#636#0" expanded="true" />
+            <element signature="e#635#636#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -1166,18 +1174,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/io/github/vectri/tpa/Requests/RequestTimer.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="221">
-          <caret line="13" column="11" lean-forward="false" selection-start-line="13" selection-start-column="11" selection-end-line="13" selection-end-column="11" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#478#749#0" expanded="true" />
-            <element signature="e#748#749#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/io/github/vectri/tpa/TPA.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="306">
@@ -1210,10 +1206,22 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/io/github/vectri/tpa/Commands/TPRCommand.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="298">
-          <caret line="39" column="134" lean-forward="false" selection-start-line="39" selection-start-column="134" selection-end-line="39" selection-end-column="134" />
+        <state relative-caret-position="26">
+          <caret line="23" column="52" lean-forward="true" selection-start-line="23" selection-start-column="52" selection-end-line="23" selection-end-column="52" />
           <folding>
             <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/io/github/vectri/tpa/Requests/RequestTimer.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="374">
+          <caret line="22" column="57" lean-forward="false" selection-start-line="22" selection-start-column="57" selection-end-line="22" selection-end-column="57" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#478#636#0" expanded="true" />
+            <element signature="e#635#636#0" expanded="true" />
           </folding>
         </state>
       </provider>

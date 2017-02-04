@@ -21,7 +21,6 @@ class RequestTimer {
             @Override
             public void run() {
                 requestHandler.remove(target, requester);
-                plugin.getLogger().info("Deleted request for " + requester + " to teleport to " + target + ".");
             }
         }.runTaskLaterAsynchronously(plugin, 600);
     }
