@@ -3,6 +3,7 @@ package io.github.vectri.tpa.Commands;
 import io.github.vectri.tpa.Requests.RequestHandler;
 import io.github.vectri.tpa.TPA;
 import org.bukkit.Bukkit;
+import org.bukkit.ChatColor;
 import org.bukkit.command.Command;
 import org.bukkit.command.CommandExecutor;
 import org.bukkit.command.CommandSender;
@@ -16,7 +17,7 @@ import java.util.UUID;
  */
 public class TPRCommand implements CommandExecutor {
     private TPA plugin;
-    private static RequestHandler requestHandler;
+    private RequestHandler requestHandler;
 
     public TPRCommand(TPA plugin) {
         this.plugin = plugin;
@@ -33,15 +34,17 @@ public class TPRCommand implements CommandExecutor {
                         UUID playerUniqueId = player.getUniqueId();
                         UUID senderUniqueId = ((Player) sender).getUniqueId();
                         if (requestHandler.alreadyRequested(playerUniqueId, senderUniqueId)) {
-                            sender.sendMessage("You have already requested to teleport to " + player.getName() + "!");
+                            sender.sendMessage("You have already requested to teleport to " + ChatColor.GREEN + player.getName() + ChatColor.RESET + "!");
                         } else {
                             requestHandler.add(playerUniqueId, senderUniqueId);
                             sender.sendMessage("Sent a teleport request to " + player.getName() + ".");
-                            player.sendMessage(sender.getName() + " has requested to teleport to you. /tpa " + sender.getName() + " to accept.");
+                            player.sendMessage(sender.getName() + " has requested to teleport to you. /tpa " + ChatColor.GREEN + sender.getName() + ChatColor.RESET + " to accept.");
                         }
                         return true;
                     }
                 }
+                sender.sendMessage(ChatColor.RED + "That is not the name of a player that is currently online.");
+                return true;
             }
         }
         return false; // Returning false shows the correct usage of the command.
