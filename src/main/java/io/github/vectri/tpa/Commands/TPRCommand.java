@@ -5,6 +5,7 @@ import org.bukkit.command.Command;
 import org.bukkit.command.CommandExecutor;
 import org.bukkit.command.CommandSender;
 import org.bukkit.entity.Player;
+import org.bukkit.scheduler.BukkitRunnable;
 
 
 /**
@@ -16,7 +17,7 @@ public class TPRCommand implements CommandExecutor {
         if (sender instanceof Player) {
             String target = (args.length != 0) ? args[0].toLowerCase() : null;
             if (target != null) {
-                for (Player player :  Bukkit.getOnlinePlayers()) {
+                for (Player player : Bukkit.getOnlinePlayers()) {
                     if (player.getName().equalsIgnoreCase(target)) {
                         sender.sendMessage("Found your player!");
                         return true;
