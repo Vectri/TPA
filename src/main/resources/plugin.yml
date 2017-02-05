@@ -1,14 +1,14 @@
-name: TPA
+name: TPR
 version: ${project.version}
-main: io.github.vectri.tpa.TPA
-prefix: TPA
+main: io.github.vectri.tpr.TPR
+prefix: TPR
 authors: [vectri]
 description: A plugin to handle teleport requests.
 website: vectri.github.io
 commands:
-  tpa:
-    description: Accept a teleport request from another player.
-    usage: /tpa <player>
   tpr:
     description: Send a player a teleport request.
     usage: /tpr <player>
+  tpa:
+    description: Accept a teleport request from another player.
+    usage: /tpa <player>

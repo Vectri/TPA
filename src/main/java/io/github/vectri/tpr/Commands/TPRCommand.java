@@ -1,7 +1,7 @@
-package io.github.vectri.tpa.Commands;
+package io.github.vectri.tpr.Commands;
 
-import io.github.vectri.tpa.Requests.RequestHandler;
-import io.github.vectri.tpa.TPA;
+import io.github.vectri.tpr.Requests.RequestHandler;
+import io.github.vectri.tpr.TPR;
 import org.bukkit.Bukkit;
 import org.bukkit.ChatColor;
 import org.bukkit.command.Command;
@@ -16,10 +16,10 @@ import java.util.UUID;
  * Handles the requesting of teleports.
  */
 public class TPRCommand implements CommandExecutor {
-    private TPA plugin;
+    private TPR plugin;
     private RequestHandler requestHandler;
 
-    public TPRCommand(TPA plugin) {
+    public TPRCommand(TPR plugin) {
         this.plugin = plugin;
         requestHandler = new RequestHandler(plugin);
     }

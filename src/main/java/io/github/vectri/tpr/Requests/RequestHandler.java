@@ -1,6 +1,6 @@
-package io.github.vectri.tpa.Requests;
+package io.github.vectri.tpr.Requests;
 
-import io.github.vectri.tpa.TPA;
+import io.github.vectri.tpr.TPR;
 
 import java.util.*;
 
@@ -8,10 +8,10 @@ import java.util.*;
  * Handles the data for teleport requests.
  */
 public class RequestHandler {
-    private TPA plugin;
+    private TPR plugin;
     private static ArrayList<Request> requestArrayList = new ArrayList<>();
 
-    public RequestHandler(TPA plugin) {
+    public RequestHandler(TPR plugin) {
         this.plugin = plugin;
     }
 

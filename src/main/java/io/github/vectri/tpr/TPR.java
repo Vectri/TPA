@@ -1,13 +1,13 @@
-package io.github.vectri.tpa;
+package io.github.vectri.tpr;
 
-import io.github.vectri.tpa.Commands.TPACommand;
-import io.github.vectri.tpa.Commands.TPRCommand;
+import io.github.vectri.tpr.Commands.TPACommand;
+import io.github.vectri.tpr.Commands.TPRCommand;
 import org.bukkit.plugin.java.JavaPlugin;
 
 /**
- *  The main file for TPA.
+ *  The main file for TPR.
  */
-public final class TPA extends JavaPlugin {
+public final class TPR extends JavaPlugin {
     @Override
     public void onEnable() {
         this.getCommand("tpa").setExecutor(new TPACommand(this));

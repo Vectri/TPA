@@ -1,4 +1,4 @@
-package io.github.vectri.tpa.Requests;
+package io.github.vectri.tpr.Requests;
 
 import java.util.ArrayList;
 import java.util.UUID;

@@ -1,0 +1,10 @@
+<component name="ArtifactManager">
+  <artifact name="TPR.jar">
+    <output-path>E:/Program Files/Minecraft/server/plugins</output-path>
+    <root id="root">
+      <element id="archive" name="TPR.jar">
+        <element id="module-output" name="TPR" />
+      </element>
+    </root>
+  </artifact>
+</component>

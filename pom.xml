@@ -5,11 +5,11 @@
     <modelVersion>4.0.0</modelVersion>
 
     <groupId>io.github.vectri</groupId>
-    <artifactId>tpa</artifactId>
+    <artifactId>tpr</artifactId>
     <version>1.0</version>
     <packaging>jar</packaging>
 
-    <name>TPA</name>
+    <name>TPR</name>
 
     <description>A plugin to handle teleport requests.</description>
     <properties>
