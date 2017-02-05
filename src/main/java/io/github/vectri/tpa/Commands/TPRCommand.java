@@ -27,27 +27,43 @@ public class TPRCommand implements CommandExecutor {
     @Override
     public boolean onCommand(CommandSender sender, Command command, String label, String[] args) {
         if (sender instanceof Player) {
-            String target = (args.length != 0) ? args[0].toLowerCase() : null;
-            if (target != null) {
-                for (Player player : Bukkit.getOnlinePlayers()) {
-                    if (player.getName().equalsIgnoreCase(target)) {
-                        UUID playerUniqueId = player.getUniqueId();
-                        UUID senderUniqueId = ((Player) sender).getUniqueId();
-                        if (requestHandler.alreadyRequested(playerUniqueId, senderUniqueId)) {
-                            sender.sendMessage("You have already requested to teleport to " + ChatColor.GREEN + player.getName() + ChatColor.RESET + "!");
-                        } else {
-                            requestHandler.add(playerUniqueId, senderUniqueId);
-                            sender.sendMessage("Sent a teleport request to " + ChatColor.GREEN + player.getName() + ChatColor.RESET + ".");
-                            player.sendMessage(ChatColor.GREEN + sender.getName() + ChatColor.RESET + " has requested to teleport to you. /tpa "
-                                    + ChatColor.GREEN + sender.getName() + ChatColor.RESET + " to accept.");
-                        }
-                        return true;
-                    }
+            String arg0 = (args.length != 0) ? args[0].toLowerCase() : null;
+            if (arg0 != null) {
+                Player target = matchPlayerName(arg0);
+                if (target != null) {
+                    addRequest(target, (Player) sender);
+                } else {
+                    sender.sendMessage(ChatColor.RED + "That is not the name of a player that is currently online.");
                 }
-                sender.sendMessage(ChatColor.RED + "That is not the name of a player that is currently online.");
                 return true;
             }
         }
         return false; // Returning false shows the correct usage of the command.
+    }
+
+    private void addRequest(Player target, Player requester) {
+        UUID targetUniqueId = target.getUniqueId();
+        UUID requesterUniqueId = requester.getUniqueId();
+        if (requesterUniqueId == targetUniqueId) {
+            requester.sendMessage(ChatColor.RED + "You cannot request to teleport to yourself!");
+            return;
+        }
+        if (requestHandler.alreadyRequested(targetUniqueId, requesterUniqueId)) {
+            requester.sendMessage("You have already requested to teleport to " + ChatColor.GREEN + target.getName() + ChatColor.RESET + "!");
+            return;
+        }
+        requestHandler.add(targetUniqueId, requesterUniqueId);
+        requester.sendMessage("Sent a teleport request to " + ChatColor.GREEN + target.getName() + ChatColor.RESET + ".");
+        target.sendMessage(ChatColor.GREEN + requester.getName() + ChatColor.RESET + " has requested to teleport to you. ");
+        target.sendMessage("/tpa " + ChatColor.GREEN + requester.getName() + ChatColor.RESET + " to accept.");
+    }
+
+    private Player matchPlayerName(String name) {
+        for (Player player : Bukkit.getOnlinePlayers()) {
+            if (player.getName().equalsIgnoreCase(name)) {
+                return player;
+            }
+        }
+        return null;
     }
 }
