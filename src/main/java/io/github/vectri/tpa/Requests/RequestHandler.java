@@ -58,4 +58,12 @@ public class RequestHandler {
         }
         return false;
     }
+
+    public ArrayList<UUID> getRequests(UUID target) {
+        Request request = get(target);
+        if (request != null) {
+            return request.getRequesterList();
+        }
+        return null;
+    }
 }
